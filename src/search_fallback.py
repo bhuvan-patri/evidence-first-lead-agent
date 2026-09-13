@@ -35,3 +35,17 @@ class SearchFallback:
             query=query,
             max_results=max_results,
         )
+
+    def find_linkedin_profiles(
+        self,
+        company_domain: str,
+        max_results: int = 3,
+    ) -> list[SearchResult]:
+        """Discover candidate LinkedIn leadership pages for browser validation."""
+        return self.provider.search(
+            query=(
+                f'site:linkedin.com/in "{company_domain}" '
+                '(CEO OR founder OR co-founder OR executive)'
+            ),
+            max_results=max_results,
+        )

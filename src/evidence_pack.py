@@ -7,6 +7,7 @@ class EvidenceItem:
     value: str
     source_url: str
     source_type: str
+    strength: str = "medium"
 
 
 @dataclass
@@ -32,7 +33,8 @@ class EvidencePack:
                 f"[{item.field}] "
                 f"{item.value}\n"
                 f"Source: {item.source_url}\n"
-                f"Type: {item.source_type}"
+                f"Type: {item.source_type}\n"
+                f"Strength: {item.strength}"
             )
 
         return "\n\n".join(sections)

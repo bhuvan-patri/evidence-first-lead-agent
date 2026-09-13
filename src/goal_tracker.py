@@ -1,3 +1,6 @@
+from src.evidence_builder import EvidenceBuilder
+
+
 class GoalTracker:
     REQUIRED_GOALS = {
         "company_overview",
@@ -6,20 +9,9 @@ class GoalTracker:
         "leadership",
     }
 
+    def __init__(self):
+        self.evidence_builder = EvidenceBuilder()
+
     def find_missing(self, collected_pages):
-        completed = set()
-
-        for page in collected_pages:
-            if not page.get("success"):
-                continue
-
-            # EvidenceBuilder may attach multiple detected goals.
-            goals = page.get("goals", [])
-
-            # Backward compatibility with the previous single-goal format.
-            if not goals and page.get("goal"):
-                goals = [page["goal"]]
-
-            completed.update(goals)
-
+        completed = self.evidence_builder.completed_goals(collected_pages)
         return self.REQUIRED_GOALS - completed

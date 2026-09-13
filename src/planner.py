@@ -19,8 +19,10 @@ class InformationPlanner:
                     "team",
                     "people",
                     "executives",
+                    "management",
+                    "founders",
                 ],
-                priority=6,
+                priority=7,
             ),
             InformationGoal(
                 name="contact_information",
@@ -28,6 +30,7 @@ class InformationPlanner:
                     "contact",
                     "sales",
                     "support",
+                    "help",
                 ],
                 priority=5,
             ),
@@ -39,8 +42,9 @@ class InformationPlanner:
                     "story",
                     "mission",
                     "overview",
+                    "company",
                 ],
-                priority=5,
+                priority=6,
             ),
             InformationGoal(
                 name="target_audience",
@@ -50,6 +54,8 @@ class InformationPlanner:
                     "clients",
                     "use-cases",
                     "solutions",
+                    "developers",
+                    "teams",
                 ],
                 priority=4,
             ),
@@ -126,3 +132,17 @@ class InformationPlanner:
         )
 
         return ranked
+
+    def best_goal_for(self, link: dict, missing_goals: set[str]) -> dict | None:
+        """Score a link against current, rather than initial, information gaps."""
+        candidates = []
+        for goal in self.goals:
+            if goal.name not in missing_goals:
+                continue
+            relevance = self._goal_score(link["url"], link.get("text", ""), goal)
+            if relevance:
+                candidates.append((goal.priority, relevance, goal))
+        if not candidates:
+            return None
+        _, relevance, goal = max(candidates, key=lambda item: (item[0], item[1]))
+        return {**link, "goal": goal.name, "goal_score": relevance, "goal_priority": goal.priority}

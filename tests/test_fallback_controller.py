@@ -19,11 +19,15 @@ def test_searches_only_missing_goals():
     pages = [
         {
             "success": True,
-            "goal": "company_overview",
+            "url": "https://postman.com/about",
+            "content": "We provide an API platform for developers.",
+            "sections": [],
         },
         {
             "success": True,
-            "goal": "contact_information",
+            "url": "https://postman.com/contact",
+            "content": "Contact sales@postman.com.",
+            "sections": [],
         },
     ]
 
@@ -32,10 +36,6 @@ def test_searches_only_missing_goals():
         pages,
     )
 
-    assert set(results.keys()) == {
-        "leadership",
-        "target_audience",
-    }
+    assert set(results.keys()) == {"leadership"}
 
     assert len(results["leadership"]) == 1
-    assert len(results["target_audience"]) == 1

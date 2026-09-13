@@ -13,7 +13,7 @@ class FakeAnalyzer:
                 {
                     "url": f"https://{domain}/about",
                     "success": True,
-                    "content": "Example company builds software for developers.",
+                    "content": "We build software for developers.",
                 }
             ],
         }
@@ -78,7 +78,7 @@ def test_agent_continues_after_domain_failure():
                     {
                         "url": f"https://{domain}/",
                         "success": True,
-                        "content": "Example company builds software for developers.",
+                        "content": "We build software for developers.",
                     }
                 ],
             }

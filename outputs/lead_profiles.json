@@ -1,0 +1,223 @@
+{
+  "results": [
+    {
+      "domain": "https://postman.com",
+      "success": true,
+      "error": null,
+      "pages_discovered": 75,
+      "pages_selected": 2,
+      "completed_goals": [
+        "company_overview",
+        "contact_information",
+        "leadership",
+        "target_audience"
+      ],
+      "missing_goals": [],
+      "evidence_items": 5,
+      "profile": {
+        "company_domain": "https://postman.com",
+        "company_overview": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs\u2014faster.",
+        "icp": "Develop, test, manage, and distribute APIs and services. Built for engineers. Designed for enterprise scale.",
+        "generic_emails": [
+          "info@postman.com"
+        ],
+        "leadership": [],
+        "evidence": [
+          {
+            "field": "target_audience",
+            "value": "Develop, test, manage, and distribute APIs and services. Built for engineers. Designed for enterprise scale.",
+            "source_url": "https://www.postman.com/",
+            "source_type": "company_website",
+            "strength": "strong"
+          },
+          {
+            "field": "contact_information",
+            "value": "info@postman.com\nPublic email links: info@postman.com",
+            "source_url": "https://www.postman.com/company/about-postman/",
+            "source_type": "company_website",
+            "strength": "strong"
+          },
+          {
+            "field": "leadership",
+            "value": "The founders\nPostman started simply as a side project to solve a specific problem: Abhinav Asthana, Postman's CEO and co-founder, set out to create a tool that would simplify the API testing process. As the tool's usage quickly exploded, Abhinav recruited two of his former colleagues, Ankit Sobti and Abhijit Kane, to help him create Postman, Inc. Postman is now the world's leading API platform, and the three founders still lead the company to this day. (Photo caption from left to right, Ankit Sobti, Abhinav Asthana, and Abhijit Kane).",
+            "source_url": "https://www.postman.com/company/about-postman/",
+            "source_type": "company_website",
+            "strength": "medium"
+          },
+          {
+            "field": "company_overview",
+            "value": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs\u2014faster.\nAt Postman, we create with the same curiosity that we see in our users. We value transparency and honest communication. We love to hear about our successes, but we value and appreciate the opportunity to learn and grow from each other's mistakes.\nWe count on each other, always offer help, and focus on solutions. We are a hybrid workplace spanning the globe, but Postmanauts are part of a tight, trusting community that appreciates each person's contributions toward Postman's mission.\nWe're a global company headquartered in San Francisco\u2014with offices in Bangalore (where the company was founded) and Japan\u2014and distributed team members on multiple continents.",
+            "source_url": "https://www.postman.com/company/about-postman/",
+            "source_type": "company_website",
+            "strength": "strong"
+          },
+          {
+            "field": "target_audience",
+            "value": "At Postman, we create with the same curiosity that we see in our users. We value transparency and honest communication. We love to hear about our successes, but we value and appreciate the opportunity to learn and grow from each other's mistakes.\nThe Postman API Platform delivers high productivity for developers, great quality for APIs, and airtight governance for organizations across the world.",
+            "source_url": "https://www.postman.com/company/about-postman/",
+            "source_type": "company_website",
+            "strength": "strong"
+          }
+        ],
+        "confidence": 0.76,
+        "telemetry": {
+          "provider": "gemini",
+          "model": "gemini-3.6-flash",
+          "llm_calls": 1,
+          "input_tokens": 741,
+          "output_tokens": 199,
+          "thought_tokens": 1514,
+          "total_tokens": 2454,
+          "estimated_cost_usd": 0.0,
+          "errors": []
+        }
+      },
+      "telemetry": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "llm_calls": 1,
+        "input_tokens": 741,
+        "output_tokens": 199,
+        "thought_tokens": 1514,
+        "total_tokens": 2454,
+        "estimated_cost_usd": 0.0,
+        "errors": []
+      }
+    },
+    {
+      "domain": "https://supabase.com",
+      "success": true,
+      "error": null,
+      "pages_discovered": 82,
+      "pages_selected": 4,
+      "completed_goals": [
+        "target_audience"
+      ],
+      "missing_goals": [
+        "company_overview",
+        "contact_information",
+        "leadership"
+      ],
+      "evidence_items": 1,
+      "profile": {
+        "company_domain": "https://supabase.com",
+        "company_overview": "",
+        "icp": "Build on a platform designed for enterprise security and integration. Supabase is \"just Postgres,\" offering SOC 2 and HIPAA compliance, while partner integrations ensure new projects connect seamlessly to your existing systems. Built for How AI Builders Work",
+        "generic_emails": [],
+        "leadership": [],
+        "evidence": [
+          {
+            "field": "target_audience",
+            "value": "Build on a platform designed for enterprise security and integration. Supabase is \"just Postgres,\" offering SOC 2 and HIPAA compliance, while partner integrations ensure new projects connect seamlessly to your existing systems.\nBuilt for How AI Builders Work",
+            "source_url": "https://supabase.com/solutions/innovation-teams",
+            "source_type": "company_website",
+            "strength": "strong"
+          }
+        ],
+        "confidence": 0.3,
+        "telemetry": {
+          "provider": "gemini",
+          "model": "gemini-3.6-flash",
+          "llm_calls": 1,
+          "input_tokens": 233,
+          "output_tokens": 284,
+          "thought_tokens": 1877,
+          "total_tokens": 2394,
+          "estimated_cost_usd": 0.0,
+          "errors": []
+        }
+      },
+      "telemetry": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "llm_calls": 1,
+        "input_tokens": 233,
+        "output_tokens": 284,
+        "thought_tokens": 1877,
+        "total_tokens": 2394,
+        "estimated_cost_usd": 0.0,
+        "errors": []
+      }
+    },
+    {
+      "domain": "https://vapi.ai",
+      "success": true,
+      "error": null,
+      "pages_discovered": 11,
+      "pages_selected": 1,
+      "completed_goals": [
+        "company_overview",
+        "target_audience"
+      ],
+      "missing_goals": [
+        "contact_information",
+        "leadership"
+      ],
+      "evidence_items": 3,
+      "profile": {
+        "company_domain": "https://vapi.ai",
+        "company_overview": "One platform for all your voice agents.",
+        "icp": "Voice agents for builders Orchestration, real-time monitoring, and enterprise-grade configurability built for scale.",
+        "generic_emails": [],
+        "leadership": [],
+        "evidence": [
+          {
+            "field": "company_overview",
+            "value": "One platform for all your voice agents.",
+            "source_url": "https://vapi.ai/",
+            "source_type": "company_website",
+            "strength": "strong"
+          },
+          {
+            "field": "target_audience",
+            "value": "Voice agents for builders\nOrchestration, real-time monitoring, and enterprise-grade configurability built for scale.",
+            "source_url": "https://vapi.ai/",
+            "source_type": "company_website",
+            "strength": "strong"
+          },
+          {
+            "field": "target_audience",
+            "value": "Vapi Scale is built for teams that need reliability, scale, and support.",
+            "source_url": "https://vapi.ai/sales",
+            "source_type": "company_website",
+            "strength": "strong"
+          }
+        ],
+        "confidence": 0.56,
+        "telemetry": {
+          "provider": "gemini",
+          "model": "gemini-3.6-flash",
+          "llm_calls": 1,
+          "input_tokens": 285,
+          "output_tokens": 302,
+          "thought_tokens": 1109,
+          "total_tokens": 1696,
+          "estimated_cost_usd": 0.0,
+          "errors": []
+        }
+      },
+      "telemetry": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "llm_calls": 1,
+        "input_tokens": 285,
+        "output_tokens": 302,
+        "thought_tokens": 1109,
+        "total_tokens": 1696,
+        "estimated_cost_usd": 0.0,
+        "errors": []
+      }
+    }
+  ],
+  "telemetry_summary": {
+    "provider": "gemini",
+    "model": "gemini-3.6-flash",
+    "llm_calls": 3,
+    "input_tokens": 1259,
+    "output_tokens": 785,
+    "thought_tokens": 4500,
+    "total_tokens": 6544,
+    "estimated_cost_usd": 0.0,
+    "errors": []
+  }
+}

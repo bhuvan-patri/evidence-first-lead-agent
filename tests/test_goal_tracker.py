@@ -7,17 +7,29 @@ def test_finds_missing_goals():
     pages = [
         {
             "success": True,
-            "goal": "company_overview",
+            "url": "https://example.com/about",
+            "content": "We provide software for developers.",
+            "sections": [],
         },
         {
             "success": True,
-            "goal": "contact_information",
+            "url": "https://example.com/contact",
+            "content": "Contact sales@example.com.",
+            "sections": [],
         },
     ]
 
     missing = tracker.find_missing(pages)
 
-    assert missing == {
-        "target_audience",
-        "leadership",
-    }
+    assert missing == {"leadership"}
+
+
+def test_heading_only_does_not_mark_leadership_complete():
+    missing = GoalTracker().find_missing([{
+        "success": True,
+        "url": "https://example.com/team",
+        "content": "Leadership\nMeet the team",
+        "sections": [],
+    }])
+
+    assert "leadership" in missing

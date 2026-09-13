@@ -5,8 +5,11 @@ class LinkScorer:
     KEYWORDS = {
         "about": 5,
         "company": 5,
+        "story": 5,
+        "mission": 5,
         "team": 5,
         "leadership": 6,
+        "executives": 6,
         "people": 5,
         "contact": 6,
         "solutions": 4,
@@ -14,6 +17,7 @@ class LinkScorer:
         "services": 4,
         "industries": 4,
         "customers": 3,
+        "use-cases": 4,
         "clients": 3,
         "careers": 2,
     }
