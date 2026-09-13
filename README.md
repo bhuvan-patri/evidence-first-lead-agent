@@ -66,21 +66,23 @@ When a Tavily key is configured, `FallbackController` queries only still-missing
 
 ```mermaid
 flowchart TD
-    A[Company domain] --> B[Playwright Chromium]
-    B --> C[Rendered text, sections, and links]
-    C --> D[Same-site link discovery and scoring]
-    D --> E[Adaptive page selection]
-    E --> F[Content cleaning]
-    F --> G[Evidence classification and builder]
-    G --> H[Validated evidence pack]
-    E -. missing goals, optional .-> I[Tavily search]
-    I --> J[Browser validation and classification]
+    A["Company domain"] --> B["Playwright Chromium"]
+    B --> C["Rendered text, sections, and links"]
+    C --> D["Same-site link discovery and scoring"]
+    D --> E["Adaptive page selection"]
+    E --> F["Content cleaning"]
+    F --> G["Evidence classification and builder"]
+    G --> H["Validated evidence pack"]
+
+    E -. "missing goals, optional" .-> I["Tavily search"]
+    I --> J["Browser validation and classification"]
     J --> H
-    H --> K[Gemini Interactions API\nJSON Schema output]
-    K --> L[Pydantic draft validation]
-    L --> M[Evidence-backed profile reconciliation]
-    M --> N[Deterministic confidence]
-    N --> O[Telemetry and JSON output]
+
+    H --> K["Gemini Interactions API<br/>JSON Schema output"]
+    K --> L["Pydantic draft validation"]
+    L --> M["Evidence-backed profile reconciliation"]
+    M --> N["Deterministic confidence"]
+    N --> O["Telemetry and JSON output"]
 ```
 
 ## Technology stack
