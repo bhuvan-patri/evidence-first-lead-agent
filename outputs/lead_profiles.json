@@ -21,7 +21,23 @@
         "generic_emails": [
           "info@postman.com"
         ],
-        "leadership": [],
+        "leadership": [
+          {
+            "name": "Abhinav Asthana",
+            "role": "CEO and Co-founder",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ankit Sobti",
+            "role": "Co-founder",
+            "linkedin_url": null
+          },
+          {
+            "name": "Abhijit Kane",
+            "role": "Co-founder",
+            "linkedin_url": null
+          }
+        ],
         "evidence": [
           {
             "field": "target_audience",
@@ -59,15 +75,15 @@
             "strength": "strong"
           }
         ],
-        "confidence": 0.76,
+        "confidence": 0.88,
         "telemetry": {
           "provider": "gemini",
           "model": "gemini-3.6-flash",
           "llm_calls": 1,
           "input_tokens": 741,
-          "output_tokens": 199,
-          "thought_tokens": 1514,
-          "total_tokens": 2454,
+          "output_tokens": 1626,
+          "thought_tokens": 2156,
+          "total_tokens": 4523,
           "estimated_cost_usd": 0.0,
           "errors": []
         }
@@ -77,9 +93,9 @@
         "model": "gemini-3.6-flash",
         "llm_calls": 1,
         "input_tokens": 741,
-        "output_tokens": 199,
-        "thought_tokens": 1514,
-        "total_tokens": 2454,
+        "output_tokens": 1626,
+        "thought_tokens": 2156,
+        "total_tokens": 4523,
         "estimated_cost_usd": 0.0,
         "errors": []
       }
@@ -120,9 +136,9 @@
           "model": "gemini-3.6-flash",
           "llm_calls": 1,
           "input_tokens": 233,
-          "output_tokens": 284,
-          "thought_tokens": 1877,
-          "total_tokens": 2394,
+          "output_tokens": 219,
+          "thought_tokens": 2154,
+          "total_tokens": 2606,
           "estimated_cost_usd": 0.0,
           "errors": []
         }
@@ -132,9 +148,9 @@
         "model": "gemini-3.6-flash",
         "llm_calls": 1,
         "input_tokens": 233,
-        "output_tokens": 284,
-        "thought_tokens": 1877,
-        "total_tokens": 2394,
+        "output_tokens": 219,
+        "thought_tokens": 2154,
+        "total_tokens": 2606,
         "estimated_cost_usd": 0.0,
         "errors": []
       }
@@ -189,9 +205,9 @@
           "model": "gemini-3.6-flash",
           "llm_calls": 1,
           "input_tokens": 285,
-          "output_tokens": 302,
-          "thought_tokens": 1109,
-          "total_tokens": 1696,
+          "output_tokens": 124,
+          "thought_tokens": 1758,
+          "total_tokens": 2167,
           "estimated_cost_usd": 0.0,
           "errors": []
         }
@@ -201,9 +217,9 @@
         "model": "gemini-3.6-flash",
         "llm_calls": 1,
         "input_tokens": 285,
-        "output_tokens": 302,
-        "thought_tokens": 1109,
-        "total_tokens": 1696,
+        "output_tokens": 124,
+        "thought_tokens": 1758,
+        "total_tokens": 2167,
         "estimated_cost_usd": 0.0,
         "errors": []
       }
@@ -214,9 +230,9 @@
     "model": "gemini-3.6-flash",
     "llm_calls": 3,
     "input_tokens": 1259,
-    "output_tokens": 785,
-    "thought_tokens": 4500,
-    "total_tokens": 6544,
+    "output_tokens": 1969,
+    "thought_tokens": 6068,
+    "total_tokens": 9296,
     "estimated_cost_usd": 0.0,
     "errors": []
   }
