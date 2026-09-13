@@ -99,73 +99,25 @@ flowchart TD
 
 ## Output
 
-`main.py` writes a JSON payload with a result per input domain and an aggregate telemetry summary. The following is a concise excerpt from the stored `postman.com` result:
+`main.py` writes a JSON payload with a result per input domain and an aggregate telemetry summary.
 
-```json
-{
-  "results": [
-    {
-      "domain": "https://postman.com",
-      "success": true,
-      "error": null,
-      "pages_discovered": 75,
-      "pages_selected": 2,
-      "completed_goals": ["company_overview", "contact_information", "leadership", "target_audience"],
-      "missing_goals": [],
-      "evidence_items": 5,
-      "profile": {
-        "company_domain": "https://postman.com",
-        "company_overview": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs\u2014faster.",
-        "icp": "Develop, test, manage, and distribute APIs and services. Built for engineers. Designed for enterprise scale.",
-        "generic_emails": ["info@postman.com"],
-        "leadership": [],
-        "evidence": [
-          {
-            "field": "target_audience",
-            "value": "Develop, test, manage, and distribute APIs and services. Built for engineers. Designed for enterprise scale.",
-            "source_url": "https://www.postman.com/",
-            "source_type": "company_website",
-            "strength": "strong"
-          }
-        ],
-        "confidence": 0.76,
-        "telemetry": {
-          "provider": "gemini",
-          "model": "gemini-3.6-flash",
-          "llm_calls": 1,
-          "input_tokens": 741,
-          "output_tokens": 199,
-          "thought_tokens": 1514,
-          "total_tokens": 2454,
-          "estimated_cost_usd": 0.0,
-          "errors": []
-        }
-      }
-    }
-  ],
-  "telemetry_summary": {
-    "provider": "gemini",
-    "model": "gemini-3.6-flash",
-    "llm_calls": 3,
-    "input_tokens": 1259,
-    "output_tokens": 785,
-    "thought_tokens": 4500,
-    "total_tokens": 6544,
-    "estimated_cost_usd": 0.0,
-    "errors": []
-  }
-}
-```
+The repository includes a preserved live sample for the three assignment domains:
 
-The excerpt omits additional evidence items from the stored record. Evidence values are non-empty because they are created only from usable evidence. Evidence strength is `strong` or `medium` for items included by the builder; confidence combines supported populated fields, evidence strength, first-party coverage, corroboration, and whether leadership has a LinkedIn URL. `estimated_cost_usd` is an estimate only: it remains `0.0` until verified per-million-token rates are configured.
+`outputs/lead_profiles.json`
 
-## Included sample and validation
+Each domain result contains:
+- Processing status and any structured error
+- Pages discovered and selected
+- Completed and missing evidence goals
+- Company overview
+- Target audience / ICP
+- Public role-based email addresses
+- Leadership information when supported by evidence
+- Source-backed evidence items
+- Deterministic confidence score
+- Per-domain Gemini telemetry
 
-[`outputs/lead_profiles.json`](outputs/lead_profiles.json) is a preserved live sample for the three included domains:
-
-- `postman.com`
-- `supabase.com`
-- `vapi.ai`
+The aggregate output also contains total LLM calls, token usage when exposed by the SDK, estimated cost, and errors.
 
 ## Resilience and failure handling
 
