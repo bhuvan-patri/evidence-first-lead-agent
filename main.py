@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("domains", nargs="*", help="Company domains (defaults to the three assignment domains).")
     parser.add_argument("--max-pages", type=int, default=int(os.getenv("MAX_PAGES", "5")))
     parser.add_argument("--headed", action="store_true", help="Show Chromium while browsing.")
-    parser.add_argument("--output", default="outputs/lead_profiles.json", help="JSON result file path.")
+    parser.add_argument("--output", default="outputs/Bhuvankumar_A_Patri_Sample_Output.json", help="JSON result file path.")
     return parser.parse_args()
 
 

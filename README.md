@@ -99,11 +99,11 @@ flowchart TD
 
 ## Output
 
-`main.py` writes a JSON payload with a result per input domain and an aggregate telemetry summary.
+main.py writes a JSON payload with a result per input domain and an aggregate telemetry summary.
 
 The repository includes a preserved live sample for the three assignment domains:
 
-`outputs/lead_profiles.json`
+outputs/Bhuvankumar_A_Patri_Sample_Output.json
 
 Each domain result contains:
 - Processing status and any structured error
@@ -157,7 +157,7 @@ GEMINI_API_KEY=
 
 ## Running
 
-Run the three default domains configured in `main.py` and write to `outputs/lead_profiles.json`:
+Run the three default domains configured in `main.py` and write to `outputs/Bhuvankumar_A_Patri_Sample_Output.json`:
 
 ```powershell
 .\.venv\Scripts\python.exe main.py
@@ -196,7 +196,7 @@ The normal test suite uses fake browser, search, and Gemini boundaries. It does 
 |-- pyproject.toml                  # pytest configuration
 |-- .env.example
 |-- outputs/
-|   `-- lead_profiles.json          # included three-domain sample
+|   `-- Bhuvankumar_A_Patri_Sample_Output.json          # included three-domain sample
 |-- scripts/
 |   `-- run_live.py                 # direct live smoke runner
 |-- src/

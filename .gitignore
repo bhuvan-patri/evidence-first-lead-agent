@@ -16,4 +16,4 @@ Thumbs.db
 # Keep the required assignment sample in version control; ignore any other
 # potentially large local run artifacts.
 outputs/*
-!outputs/lead_profiles.json
+!outputs/Bhuvankumar_A_Patri_Sample_Output.json
